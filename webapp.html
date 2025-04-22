@@ -4,15 +4,45 @@
   <meta charset="UTF-8">
   <title>Volleyball Quiz</title>
   <style>
-    body { background: #e0f7fa; font-family: Arial, sans-serif; padding: 20px; }
-    h1 { color: #00796b; }
-    button { margin-top: 10px; padding: 10px; }
+    body {
+      background: #e0f7fa;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #00796b;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #26a69a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #trivia {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #00796b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>🏐 Volleyball Trivia</h1>
   <button onclick="showTrivia()">Get a Trivia Fact</button>
   <p id="trivia"></p>
+
+  <a href="scratch.html">← Back to Volleyball Page</a>
 
   <script>
     const facts = [
