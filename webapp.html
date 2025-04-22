@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volleyball Quiz</title>
+  <style>
+    body { background: #e0f7fa; font-family: Arial, sans-serif; padding: 20px; }
+    h1 { color: #00796b; }
+    button { margin-top: 10px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>🏐 Volleyball Trivia</h1>
+  <button onclick="showTrivia()">Get a Trivia Fact</button>
+  <p id="trivia"></p>
+
+  <script>
+    const facts = [
+      "The first volleyball game was played in 1895 in Massachusetts.",
+      "A volleyball court is 18m long and 9m wide.",
+      "The libero is the only player that can't spike the ball over the net.",
+      "Olympic volleyball became official in 1964 in Tokyo.",
+      "A standard volleyball weighs 260–280 grams."
+    ];
+
+    function showTrivia() {
+      const random = Math.floor(Math.random() * facts.length);
+      document.getElementById("trivia").innerText = facts[random];
+    }
+  </script>
+</body>
+</html>
